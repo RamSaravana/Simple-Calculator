@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header class="title"><h1><img src="images/android-chrome-512x512.png" alt="detective" width="100px" height="100px">SIMPLE CALCULATOR</h1></header>
+        <div class="wrap">       
+                <input type="text" id="display" placeholder="0" onload="checking()" readonly>
+            <form id="calculator">
+                <input class="button btn btn-secondary" type="button" value="7" onclick="addValue('7')">
+                <input class="button btn btn-secondary" type="button" value="8" onclick="addValue('8')">
+                <input class="button btn btn-secondary" type="button" value="9" onclick="addValue('9')">
+                <input class="button btn btn-info" type="button" value="+" onclick="addValue('+')">
+                
+                <input class="button btn btn-secondary" type="button" value="4" onclick="addValue('4')">
+                <input class="button btn btn-secondary" type="button" value="5" onclick="addValue('5')">
+                <input class="button btn btn-secondary" type="button" value="6" onclick="addValue('6')">
+                <input class="button btn btn-info" type="button" value="-" onclick="addValue('-')">
+                
+                <input class="button btn btn-secondary" type="button" value="1" onclick="addValue('1')">
+                <input class="button btn btn-secondary" type="button" value="2" onclick="addValue('2')">
+                <input class="button btn btn-secondary" type="button" value="3" onclick="addValue('3')">
+                <input class="button btn btn-info" type="button" value="x" onclick="addValue('*')">
+                
+                <input class="button btn btn-danger" type="button" value="Del / C" ondblclick="clearAll()" onclick="del()">
+                <input class="button btn btn-secondary" type="button" value="0" onclick="addValue('0')">
+                <input class="button btn btn-success" type="button" value="=" onclick="calculate()">
+                <input class="button btn btn-info" type="button" value="/" onclick="addValue('/')">
+            </form>
+        <div class="info">👆 *** "SingleClick" to DELETE .&. "DoubleClick" to CLEAR ***</div>
+        </div>
+        <div class="attribution">© Coded by <a href="https://www.linkedin.com/in/ramsaravanaraja/" title="RamSaravana_Linkedin_Profile" target="_blank">RamSaravanaRaja</a></div>
+        <script src="script.js"></script>
+    </body>
+</html>
